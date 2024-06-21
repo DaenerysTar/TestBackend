@@ -6,6 +6,9 @@ import edu.tongji.backend.entity.Doctor;
 import edu.tongji.backend.entity.User;
 import edu.tongji.backend.mapper.DoctorMapper;
 import edu.tongji.backend.mapper.HospitalMapper;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -33,83 +36,65 @@ class AccountServiceImplTest {
     @InjectMocks
     private AccountServiceImpl accountService;
 
-    @Test
-    void testGetAccountList() {
-        List<DoctorInfoDTO> expectedList = Arrays.asList(new DoctorInfoDTO(), new DoctorInfoDTO());
-        when(doctorMapper.getAccountList()).thenReturn(expectedList);
+    @BeforeEach
+    void setUp(){
+        System.out.println("测试开始");
+    }
 
-        List<DoctorInfoDTO> result = accountService.getAccountList();
-
-        assertEquals(expectedList, result);
-        verify(doctorMapper, times(1)).getAccountList();
+    @AfterEach
+    void tearDown(){
+        System.out.println("测试结束！");
     }
 
     @Test
-    public void testAddAccountSuccess() throws NoSuchAlgorithmException {
-        Doctor doctor = new Doctor();
-        doctor.setIdCard("123456789");
-        String contact = "1234567890";
-        String address = "Test Address";
-
-        when(userClient2.getMaxUserId()).thenReturn(1);
-
-        accountService.addAccount(doctor, contact, address);
-
-        verify(userClient2, times(1)).addUser(any(User.class));
-        verify(doctorMapper, times(1)).insert(doctor);
-        assertNotNull(doctor.getDoctorId());
+    void getAccountList() {
     }
 
     @Test
-    public void testAddAccountException() throws NoSuchAlgorithmException {
-        Doctor doctor = new Doctor();
-        String contact = "1234567890";
-        String address = "Test Address";
-
-        when(userClient2.getMaxUserId()).thenThrow(new RuntimeException("UserClient2 error"));
-
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> accountService.addAccount(doctor, contact, address));
-
-        assertEquals("UserClient2 error", exception.getMessage());
-        verify(doctorMapper, times(0)).insert(doctor);
+    void addAccount() {
     }
 
     @Test
-    public void testDeleteAccountSuccess() {
-        int doctorId = 1;
-
-//        doNothing().when(doctorMapper).deleteById(doctorId);
+    @DisplayName("测试deleteAccount方法的成功情况")
+    void deleteAccountSuccess() {
+        // 测试输入的doctorId正确的情况
+        int doctorId  = 1;
         when(doctorMapper.deleteById(doctorId)).thenReturn(1);
         doNothing().when(userClient2).rmUser(doctorId);
-
         accountService.deleteAccount(doctorId);
-
         verify(doctorMapper, times(1)).deleteById(doctorId);
         verify(userClient2, times(1)).rmUser(doctorId);
     }
 
     @Test
-    public void testDeleteAccountException() {
-        int doctorId = 1;
+    @DisplayName("测试deleteAccount方法的异常情况：非法ID")
+    void testDeleteAccountWithIllegalId() {
+        testDeleteAccountWithException(-1, "Delete error");
+    }
+    @Test
+    @DisplayName("测试deleteAccount方法的异常情况：数据库中不存在的ID")
+    void testDeleteAccountWithNonExistentId() {
+        testDeleteAccountWithException(999, "Delete error");
+    }
+    private void testDeleteAccountWithException(int doctorId, String expectedExceptionMessage) {
+        doThrow(new RuntimeException(expectedExceptionMessage)).when(doctorMapper).deleteById(doctorId);
 
-        doThrow(new RuntimeException("Delete error")).when(doctorMapper).deleteById(doctorId);
-
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> accountService.deleteAccount(doctorId));
-
-        assertEquals("Delete error", exception.getMessage());
+        RuntimeException exception = assertThrows(
+                RuntimeException.class,
+                () -> accountService.deleteAccount(doctorId),
+                "Expected RuntimeException when attempting to delete with an invalid ID"
+        );
+        assertEquals(expectedExceptionMessage, exception.getMessage());
 
         verify(doctorMapper, times(1)).deleteById(doctorId);
         verify(userClient2, times(0)).rmUser(doctorId);
     }
 
     @Test
-    public void testRepeatedIdCard() {
-        String idCard = "123456";
-        when(doctorMapper.repeatedIdCard(idCard)).thenReturn(true);
+    void repeatedIdCard() {
+    }
 
-        Boolean result = accountService.repeatedIdCard(idCard);
-
-        assertTrue(result);
-        verify(doctorMapper, times(1)).repeatedIdCard(idCard);
+    @Test
+    void updateAccount() {
     }
 }

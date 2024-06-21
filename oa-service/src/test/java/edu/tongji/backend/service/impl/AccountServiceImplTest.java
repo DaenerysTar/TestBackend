@@ -11,6 +11,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -21,6 +23,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.ArgumentsProvider;
+import java.util.stream.Stream;
 
 @ExtendWith(MockitoExtension.class)
 class AccountServiceImplTest {
@@ -47,15 +52,41 @@ class AccountServiceImplTest {
     }
 
     @Test
-    void getAccountList() {
+    @DisplayName("测试addAccount方法的正常情况")
+    void testAddAccountSuccess() throws NoSuchAlgorithmException {
+        Doctor doctor = new Doctor();
+        doctor.setIdCard("123456789");
+        String contact = "18139000985";
+        String address = "Test Address";
+        when(userClient2.getMaxUserId()).thenReturn(1);
+        accountService.addAccount(doctor, contact, address);
+        verify(userClient2, times(1)).addUser(any(User.class));
+        verify(doctorMapper, times(1)).insert(doctor);
+        assertNotNull(doctor.getDoctorId());
+    }
+
+    // 为addAccount方法的异常测试提供数据
+    private static Stream<Arguments> provideInvalidData() {
+        return Stream.of(
+                Arguments.of(null, "18139000985", "Test Address", false), // doctor为null，其他有效
+                Arguments.of(null, "123", "Test Address", true),    // doctor和contact不合法
+                Arguments.of(null, "123",null, true)    // doctor,contact,address都不合法
+        );
+    }
+
+    // 使用参数化方法，测试addAccount方法对不合法输入的响应
+    @ParameterizedTest
+    @MethodSource("provideInvalidData")
+    @DisplayName("测试addAccount方法对不合法输入（异常输入）的响应")
+    void testAddAccountWithInvalidInputs(Doctor doctor, String contact, String address, boolean expectException) {
+        when(userClient2.getMaxUserId()).thenThrow(new RuntimeException("UserClient2 error"));
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> accountService.addAccount(doctor, contact, address));
+        assertEquals("UserClient2 error", exception.getMessage());
+        verify(doctorMapper, times(0)).insert(doctor);
     }
 
     @Test
-    void addAccount() {
-    }
-
-    @Test
-    @DisplayName("测试deleteAccount方法的成功情况")
+    @DisplayName("测试deleteAccount方法的正常情况")
     void deleteAccountSuccess() {
         // 测试输入的doctorId正确的情况
         int doctorId  = 1;

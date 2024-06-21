@@ -52,6 +52,18 @@ class AccountServiceImplTest {
     }
 
     @Test
+    @DisplayName("对GetAccountList方法进行简单的测试")
+    void testGetAccountList() {
+        List<DoctorInfoDTO> expectedList = Arrays.asList(new DoctorInfoDTO(), new DoctorInfoDTO());
+        when(doctorMapper.getAccountList()).thenReturn(expectedList);
+
+        List<DoctorInfoDTO> result = accountService.getAccountList();
+
+        assertEquals(expectedList, result);
+        verify(doctorMapper, times(1)).getAccountList();
+    }
+
+    @Test
     @DisplayName("测试addAccount方法的正常情况")
     void testAddAccountSuccess() throws NoSuchAlgorithmException {
         Doctor doctor = new Doctor();
@@ -122,10 +134,12 @@ class AccountServiceImplTest {
     }
 
     @Test
-    void repeatedIdCard() {
-    }
-
-    @Test
-    void updateAccount() {
+    @DisplayName("对RepeatedIdCard进行简单的测试")
+    public void testRepeatedIdCard() {
+        String idCard = "123456";
+        when(doctorMapper.repeatedIdCard(idCard)).thenReturn(true);
+        Boolean result = accountService.repeatedIdCard(idCard);
+        assertTrue(result);
+        verify(doctorMapper, times(1)).repeatedIdCard(idCard);
     }
 }

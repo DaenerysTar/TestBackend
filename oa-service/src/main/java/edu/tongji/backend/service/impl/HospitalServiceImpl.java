@@ -15,16 +15,24 @@ import java.util.NoSuchElementException;
 public class HospitalServiceImpl extends ServiceImpl<HospitalMapper, Hospital> implements IHospitalService {
     @Autowired
     HospitalMapper hospitalMapper;
+    /**
+     * 医院id
+     */
     static Integer id;
+    /**
+     * 添加医院
+     * @param hospital
+     * @return java.lang.Integer
+     */
     @Override
     public Integer addHospital(Hospital hospital) {
         try {
-            id=hospitalMapper.getMaxId();
+            id = hospitalMapper.getMaxId();
             synchronized (id) {
                 hospital.setHospitalId(id + 1);
             }
             hospitalMapper.insert(hospital);
-        }catch (Exception e){
+        } catch (Exception e) {
             System.err.println(e.getMessage());
             throw e;
         }
@@ -35,7 +43,8 @@ public class HospitalServiceImpl extends ServiceImpl<HospitalMapper, Hospital> i
     public void deleteHospital(int hospitalId) {
         int i = hospitalMapper.deleteById(hospitalId);
         System.out.println(i);
-        if(i==0)
-            throw new NoSuchElementException("The Hospital "+hospitalId+" doesn't exist or has been removed earlier!");
+        if (i == 0) {
+            throw new NoSuchElementException("The Hospital " + hospitalId + " doesn't exist or has been removed earlier!");
+        }
     }
 }

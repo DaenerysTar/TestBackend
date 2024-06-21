@@ -11,22 +11,60 @@ import org.springframework.web.bind.annotation.*;
 
 import java.security.NoSuchAlgorithmException;
 
-@FeignClient(name="user-service",configuration = FeignConfig.class)
+@FeignClient(name = "user-service", configuration = FeignConfig.class)
 public interface UserClient2 {
-    @PostMapping(value="/api/register/addUser")
+    /**
+     * description:
+     * @param user
+     */
+    @PostMapping(value = "/api/register/addUser")
     void addUser(User user);
-    @PostMapping (value="/api/register/rmUser")
+    /**
+     * description:
+     * @param userId
+     */
+    @PostMapping (value = "/api/register/rmUser")
     void rmUser(@RequestParam("userId") Integer userId);
-    @GetMapping(value="/api/login/repeatedContact")
+    /**
+     * description:
+     * @param contact
+     * @return edu.tongji.backend.util.Response<java.lang.Boolean>
+     */
+    @GetMapping(value = "/api/login/repeatedContact")
     Response<Boolean> repeatedContact(@RequestParam("contact") String contact);
-    @GetMapping(value="/api/login/getMaxUserId")
+    /**
+     * description:
+     * @param
+     * @return java.lang.Integer
+     */
+    @GetMapping(value = "/api/login/getMaxUserId")
     Integer getMaxUserId();
-    @PostMapping (value="/api/register/registerHelper")
+    /**
+     * description:
+     * @param registerDTO
+     * @return java.lang.Integer
+     */
+    @PostMapping (value = "/api/register/registerHelper")
     Integer registerHelper(@RequestBody RegisterDTO registerDTO) throws NoSuchAlgorithmException;
-    @PostMapping(value="/api/register/refresh")
+    /**
+     * description:
+     * @param user
+     * @return org.springframework.http.ResponseEntity<edu.tongji.backend.util.Response < java.lang.Boolean>>
+     */
+    @PostMapping(value = "/api/register/refresh")
     ResponseEntity<Response<Boolean>> BrandNewUserProfile(@RequestBody User user);
-    @GetMapping(value="/api/login/getContactForAdmin")
+    /**
+     * description:
+     * @param userId
+     * @return java.lang.String
+     */
+    @GetMapping(value = "/api/login/getContactForAdmin")
     String getContactForAdmin(@RequestParam("userId") String userId);
+    /**
+     * description:
+     * @param admin
+     * @return java.lang.Boolean
+     */
     @PostMapping("/api/login/updateAdminInfo")
     Boolean updateAdminInfo(@RequestBody AdminDTO admin);
 }

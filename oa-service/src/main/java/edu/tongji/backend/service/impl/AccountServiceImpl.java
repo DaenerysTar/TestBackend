@@ -22,6 +22,9 @@ import java.util.List;
 public class AccountServiceImpl extends ServiceImpl<DoctorMapper, Doctor> implements IAccountService {
     @Autowired
     DoctorMapper doctorMapper;
+    /**
+     * description:
+     */
     @Autowired
     UserClient2 userClient2;
     @Autowired
@@ -40,13 +43,24 @@ public class AccountServiceImpl extends ServiceImpl<DoctorMapper, Doctor> implem
         StringBuilder hexString = new StringBuilder();
         for (byte b : encodedhash) {
             String hex = Integer.toHexString(0xff & b);
-            if (hex.length() == 1)
+            if (hex.length() == 1) {
                 hexString.append('0');
+            }
             hexString.append(hex);
         }
         return hexString.toString();
     }
+    /**
+     * 医生的ID
+     */
     static Integer doctorId;
+    /**
+     * 添加医生账号
+     * @param doctor
+     * @param contact
+     * @param address
+     * @return java.lang.Integer
+     */
     @Override
     public Integer addAccount(Doctor doctor, String contact, String address) throws NoSuchAlgorithmException {
 //        加拦截器后：请求头保存管理员useId，身份是admin
@@ -62,18 +76,21 @@ public class AccountServiceImpl extends ServiceImpl<DoctorMapper, Doctor> implem
             throw e;
         }
 
+        // 对doctor_id进行转化，转化成合法的范围内的数字
         String idCard = doctor.getIdCard();
         String defaultPassword = "";
         if (idCard != null) {
             defaultPassword = idCard;
-            if (idCard.length() >= 6)
-                defaultPassword=convertToSHA256(idCard.substring(idCard.length() - 6));
+            if (idCard.length() >= 6) {
+                defaultPassword = convertToSHA256(idCard.substring(idCard.length() - 6));
+            }
         }
 
+        // 往数据库里加入这个doctor
         User user = new User(doctorId, address, "Alice", contact, defaultPassword, "doctor");
         userClient2.addUser(user);
         doctorMapper.insert(doctor);
-        return doctorId;
+        return doctorId;   // 返回加入的doctor的Id
     }
 
     @Override
@@ -81,7 +98,7 @@ public class AccountServiceImpl extends ServiceImpl<DoctorMapper, Doctor> implem
         try {
             doctorMapper.deleteById(doctorId);
             userClient2.rmUser(doctorId);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             System.err.println(e.getMessage());
             throw e;
@@ -96,7 +113,8 @@ public class AccountServiceImpl extends ServiceImpl<DoctorMapper, Doctor> implem
 
     @Override
     public Boolean updateAccount(Doctor doctor) {
-        Boolean res=doctorMapper.updateDoctor(doctor.getDoctorId(),doctor.getIdCard(),doctor.getDepartment(),doctor.getTitle(),doctor.getPhotoPath());
+        Boolean res = doctorMapper.updateDoctor(doctor.getDoctorId(), doctor.getIdCard(),
+                doctor.getDepartment(), doctor.getTitle(), doctor.getPhotoPath());
         return res;
     }
 }

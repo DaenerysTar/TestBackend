@@ -1,0 +1,63 @@
+{
+  "uid" : "d89bb020912a9fae",
+  "name" : "addHospital_DatabaseConnectionFailure()",
+  "fullName" : "edu.tongji.backend.service.impl.HospitalServiceImplTest.addHospital_DatabaseConnectionFailure",
+  "historyId" : "3c8daec477d3f8c80e7de75cfea9fd2a",
+  "time" : {
+    "start" : 1719041222429,
+    "stop" : 1719041222433,
+    "duration" : 4
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "糖小智"
+  }, {
+    "name" : "feature",
+    "value" : "HospitalService"
+  }, {
+    "name" : "feature",
+    "value" : "addHospital_DatabaseConnectionFailure"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-E123ER6H"
+  }, {
+    "name" : "thread",
+    "value" : "14444@LAPTOP-E123ER6H.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "addHospital_DatabaseConnectionFailure"
+  }, {
+    "name" : "suite",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d89bb020912a9fae.json",
+  "parameterValues" : [ ]
+}

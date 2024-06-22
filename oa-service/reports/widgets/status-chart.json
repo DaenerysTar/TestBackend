@@ -1,0 +1,251 @@
+[ {
+  "uid" : "4f3c6291f1253881",
+  "name" : "对GetAccountList方法进行简单的测试",
+  "time" : {
+    "start" : 1719040885387,
+    "stop" : 1719040885390,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7e80e7d64979bbc",
+  "name" : "addHospital_IdMinMinus()",
+  "time" : {
+    "start" : 1719042801527,
+    "stop" : 1719042801533,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1db65e11dd471a37",
+  "name" : "更新管理员信息 - 不同输入",
+  "time" : {
+    "start" : 1719049697446,
+    "stop" : 1719049697952,
+    "duration" : 506
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "19453d73a6397fce",
+  "name" : "测试addAccount方法的正常情况",
+  "time" : {
+    "start" : 1719040885376,
+    "stop" : 1719040885383,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0b33e47995ffa4b",
+  "name" : "[1] null, 18139000985, Test Address, false",
+  "time" : {
+    "start" : 1719040885421,
+    "stop" : 1719040885440,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad374af8f95056a6",
+  "name" : "testDeleteHospitalNotFound()",
+  "time" : {
+    "start" : 1719042801512,
+    "stop" : 1719042801516,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f224378da4c1489",
+  "name" : "addHospital_IdMin()",
+  "time" : {
+    "start" : 1719042801549,
+    "stop" : 1719042801554,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5049292f903f866",
+  "name" : "deleteHospital()",
+  "time" : {
+    "start" : 1719041222435,
+    "stop" : 1719041222440,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff61dbf95b5bd57b",
+  "name" : "对RepeatedIdCard进行简单的测试",
+  "time" : {
+    "start" : 1719040885468,
+    "stop" : 1719040885470,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f085111bc5f1802",
+  "name" : "addHospital_IdMinPlus()",
+  "time" : {
+    "start" : 1719042801566,
+    "stop" : 1719042801570,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7bb680bf1f27ca3",
+  "name" : "addHospital_IdMaxMinus()",
+  "time" : {
+    "start" : 1719042801574,
+    "stop" : 1719042801577,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb22b8a7ad9f2eba",
+  "name" : "测试deleteAccount方法的异常情况：非法ID",
+  "time" : {
+    "start" : 1719040885461,
+    "stop" : 1719040885464,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab34841a65797452",
+  "name" : "测试deleteAccount方法的正常情况",
+  "time" : {
+    "start" : 1719040884845,
+    "stop" : 1719040885332,
+    "duration" : 487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fc43fb3fa825212",
+  "name" : "[2] null, 123, Test Address, true",
+  "time" : {
+    "start" : 1719040885446,
+    "stop" : 1719040885449,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80ed391e13664e64",
+  "name" : "addHospital_IdMax()",
+  "time" : {
+    "start" : 1719042801542,
+    "stop" : 1719042801547,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a399a12982df48b",
+  "name" : "addHospital_DatabaseConnectionFailure()",
+  "time" : {
+    "start" : 1719042801580,
+    "stop" : 1719042801585,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73b17e4e950a27c3",
+  "name" : "测试更新管理员信息",
+  "time" : {
+    "start" : 1719059171493,
+    "stop" : 1719059171820,
+    "duration" : 327
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "44987e254bff1e44",
+  "name" : "updateAdminInfo_validNameAndContact_success()",
+  "time" : {
+    "start" : 1719045509082,
+    "stop" : 1719045509455,
+    "duration" : 373
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6374414c4e62d8b3",
+  "name" : "addHospital_IdMaxPlus()",
+  "time" : {
+    "start" : 1719042801557,
+    "stop" : 1719042801562,
+    "duration" : 5
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "68c5cdc22a0a9ac9",
+  "name" : "deleteHospitalSuccess()",
+  "time" : {
+    "start" : 1719042801520,
+    "stop" : 1719042801525,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e86ca01d93508c7c",
+  "name" : "测试deleteAccount方法的异常情况：数据库中不存在的ID",
+  "time" : {
+    "start" : 1719040885395,
+    "stop" : 1719040885401,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a611488fd978df4",
+  "name" : "合法的姓名和联系方式更新管理员信息",
+  "time" : {
+    "start" : 1719055360908,
+    "stop" : 1719055361342,
+    "duration" : 434
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e8599a74b33a106",
+  "name" : "testDeleteHospitalIllegal()",
+  "time" : {
+    "start" : 1719042801447,
+    "stop" : 1719042801482,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a398b2cfcb56c1e9",
+  "name" : "[3] null, 123, null, true",
+  "time" : {
+    "start" : 1719040885453,
+    "stop" : 1719040885455,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "874f33ada87df282",
+  "name" : "测试删除医生账号",
+  "time" : {
+    "start" : 1719043747127,
+    "stop" : 1719043748096,
+    "duration" : 969
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

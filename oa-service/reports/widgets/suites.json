@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "7de3645388a8241ab317dc09eac36b3b",
+    "name" : "edu.tongji.backend.controller.AdminControllerTest",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "10bd8d2b32f59a581ed1c8ad6e61c8ad",
+    "name" : "edu.tongji.backend.service.impl.HospitalServiceImplTest",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "38a8b958aca425b00e4efbaabb99d07f",
+    "name" : "edu.tongji.backend.service.impl.AccountServiceImplTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "f8fd786068a48a66f4c9182ffb21245a",
+    "name" : "edu.tongji.backend.controller.AccountControllerTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

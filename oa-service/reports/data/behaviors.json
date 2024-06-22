@@ -1,0 +1,505 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "糖小智",
+    "children" : [ {
+      "name" : "Service",
+      "children" : [ {
+        "name" : "AccountServiceImpl/deleteAccountSuccess",
+        "children" : [ {
+          "name" : "测试deleteAccount方法的正常情况",
+          "uid" : "ab34841a65797452",
+          "parentUid" : "734ba7bc9a192db8221fc83312765f83",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040884845,
+            "stop" : 1719040885332,
+            "duration" : 487
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "734ba7bc9a192db8221fc83312765f83"
+      }, {
+        "name" : "AccountServiceImpl/addAccountSuccess",
+        "children" : [ {
+          "name" : "测试addAccount方法的正常情况",
+          "uid" : "19453d73a6397fce",
+          "parentUid" : "e776e291bd1abe7a33ef0fea5d27e597",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885376,
+            "stop" : 1719040885383,
+            "duration" : 7
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e776e291bd1abe7a33ef0fea5d27e597"
+      }, {
+        "name" : "AccountServiceImpl/getAccountList",
+        "children" : [ {
+          "name" : "对GetAccountList方法进行简单的测试",
+          "uid" : "4f3c6291f1253881",
+          "parentUid" : "5a3d52cfe90ec5414cd337c0c4b5c2af",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885387,
+            "stop" : 1719040885390,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5a3d52cfe90ec5414cd337c0c4b5c2af"
+      }, {
+        "name" : "测试deleteAccount方法的异常情况：数据库中不存在的ID",
+        "uid" : "e86ca01d93508c7c",
+        "parentUid" : "7cf25ebd10dfb05a3d5f142af8b49202",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719040885395,
+          "stop" : 1719040885401,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "AccountServiceImpl/addAccountWithInvalidInputs",
+        "children" : [ {
+          "name" : "[1] null, 18139000985, Test Address, false",
+          "uid" : "a0b33e47995ffa4b",
+          "parentUid" : "5453778d09d1942bdcf00a7a1b260784",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885421,
+            "stop" : 1719040885440,
+            "duration" : 19
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "[2] null, 123, Test Address, true",
+          "uid" : "5fc43fb3fa825212",
+          "parentUid" : "5453778d09d1942bdcf00a7a1b260784",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885446,
+            "stop" : 1719040885449,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "[3] null, 123, null, true",
+          "uid" : "a398b2cfcb56c1e9",
+          "parentUid" : "5453778d09d1942bdcf00a7a1b260784",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885453,
+            "stop" : 1719040885455,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5453778d09d1942bdcf00a7a1b260784"
+      }, {
+        "name" : "AccountServiceImpl/testDeleteAccountWithIllegalId",
+        "children" : [ {
+          "name" : "测试deleteAccount方法的异常情况：非法ID",
+          "uid" : "fb22b8a7ad9f2eba",
+          "parentUid" : "0624ee7502b1fa0da67e17e94b61df23",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885461,
+            "stop" : 1719040885464,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0624ee7502b1fa0da67e17e94b61df23"
+      }, {
+        "name" : "AccountServiceImpl/testRepeatedIdCard",
+        "children" : [ {
+          "name" : "对RepeatedIdCard进行简单的测试",
+          "uid" : "ff61dbf95b5bd57b",
+          "parentUid" : "e389ed3115ec5c63fa991269182fd1e9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885468,
+            "stop" : 1719040885470,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e389ed3115ec5c63fa991269182fd1e9"
+      } ],
+      "uid" : "7cf25ebd10dfb05a3d5f142af8b49202"
+    }, {
+      "name" : "HospitalService",
+      "children" : [ {
+        "name" : "deleteHospital()",
+        "uid" : "5049292f903f866",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719041222435,
+          "stop" : 1719041222440,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testDeleteHospitalIllegal()",
+        "uid" : "5e8599a74b33a106",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801447,
+          "stop" : 1719042801482,
+          "duration" : 35
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testDeleteHospitalNotFound()",
+        "uid" : "ad374af8f95056a6",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801512,
+          "stop" : 1719042801516,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "deleteHospitalSuccess()",
+        "uid" : "68c5cdc22a0a9ac9",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801520,
+          "stop" : 1719042801525,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addHospital_IdMinMinus()",
+        "uid" : "d7e80e7d64979bbc",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719042801527,
+          "stop" : 1719042801533,
+          "duration" : 6
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "addHospital_IdMax()",
+        "uid" : "80ed391e13664e64",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801542,
+          "stop" : 1719042801547,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addHospital_IdMin()",
+        "uid" : "6f224378da4c1489",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801549,
+          "stop" : 1719042801554,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addHospital_IdMaxPlus()",
+        "uid" : "6374414c4e62d8b3",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719042801557,
+          "stop" : 1719042801562,
+          "duration" : 5
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "addHospital_IdMinPlus()",
+        "uid" : "4f085111bc5f1802",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801566,
+          "stop" : 1719042801570,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addHospital_IdMaxMinus()",
+        "uid" : "e7bb680bf1f27ca3",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801574,
+          "stop" : 1719042801577,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addHospital_DatabaseConnectionFailure()",
+        "uid" : "3a399a12982df48b",
+        "parentUid" : "e881cc68c05841ce27ae81a8f89ee719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801580,
+          "stop" : 1719042801585,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e881cc68c05841ce27ae81a8f89ee719"
+    }, {
+      "name" : "testDeleteHospitalIllegal",
+      "children" : [ {
+        "name" : "testDeleteHospitalIllegal()",
+        "uid" : "5e8599a74b33a106",
+        "parentUid" : "89db987601fe85eb6efa9d96fd13cd57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801447,
+          "stop" : 1719042801482,
+          "duration" : 35
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "89db987601fe85eb6efa9d96fd13cd57"
+    }, {
+      "name" : "testDeleteHospitalNotFound",
+      "children" : [ {
+        "name" : "testDeleteHospitalNotFound()",
+        "uid" : "ad374af8f95056a6",
+        "parentUid" : "31cc6fcdb89ebc19a0600fdc41fc2071",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801512,
+          "stop" : 1719042801516,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "31cc6fcdb89ebc19a0600fdc41fc2071"
+    }, {
+      "name" : "deleteHospitalSuccess",
+      "children" : [ {
+        "name" : "deleteHospitalSuccess()",
+        "uid" : "68c5cdc22a0a9ac9",
+        "parentUid" : "ccbff7b1506dfef30e82dad6768a308c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801520,
+          "stop" : 1719042801525,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ccbff7b1506dfef30e82dad6768a308c"
+    }, {
+      "name" : "addHospital_IdMinMinus",
+      "children" : [ {
+        "name" : "addHospital_IdMinMinus()",
+        "uid" : "d7e80e7d64979bbc",
+        "parentUid" : "edceeebd0e07d97d058e582480ac3101",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719042801527,
+          "stop" : 1719042801533,
+          "duration" : 6
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "edceeebd0e07d97d058e582480ac3101"
+    }, {
+      "name" : "addHospital_IdMax",
+      "children" : [ {
+        "name" : "addHospital_IdMax()",
+        "uid" : "80ed391e13664e64",
+        "parentUid" : "fef41fb23d62e99aa10875a699d75d55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801542,
+          "stop" : 1719042801547,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fef41fb23d62e99aa10875a699d75d55"
+    }, {
+      "name" : "addHospital_IdMin",
+      "children" : [ {
+        "name" : "addHospital_IdMin()",
+        "uid" : "6f224378da4c1489",
+        "parentUid" : "a017a8a70b4c86249793c0459cd99845",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801549,
+          "stop" : 1719042801554,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a017a8a70b4c86249793c0459cd99845"
+    }, {
+      "name" : "addHospital_IdMaxPlus",
+      "children" : [ {
+        "name" : "addHospital_IdMaxPlus()",
+        "uid" : "6374414c4e62d8b3",
+        "parentUid" : "13bb2f8e5359b870be6f4d6f6e23e35f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719042801557,
+          "stop" : 1719042801562,
+          "duration" : 5
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "13bb2f8e5359b870be6f4d6f6e23e35f"
+    }, {
+      "name" : "addHospital_IdMinPlus",
+      "children" : [ {
+        "name" : "addHospital_IdMinPlus()",
+        "uid" : "4f085111bc5f1802",
+        "parentUid" : "303c61722aca78b538c98b26375113c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801566,
+          "stop" : 1719042801570,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "303c61722aca78b538c98b26375113c6"
+    }, {
+      "name" : "addHospital_IdMaxMinus",
+      "children" : [ {
+        "name" : "addHospital_IdMaxMinus()",
+        "uid" : "e7bb680bf1f27ca3",
+        "parentUid" : "f1b5f116cce01df3e1de7ef9d6a30109",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801574,
+          "stop" : 1719042801577,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f1b5f116cce01df3e1de7ef9d6a30109"
+    }, {
+      "name" : "addHospital_DatabaseConnectionFailure",
+      "children" : [ {
+        "name" : "addHospital_DatabaseConnectionFailure()",
+        "uid" : "3a399a12982df48b",
+        "parentUid" : "5ed5bf116eb59841b7e720d4dcc5fa08",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719042801580,
+          "stop" : 1719042801585,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5ed5bf116eb59841b7e720d4dcc5fa08"
+    }, {
+      "name" : "AdminController",
+      "children" : [ {
+        "name" : "updateAdminInfo_validNameAndContact_success()",
+        "uid" : "44987e254bff1e44",
+        "parentUid" : "c8ddd6ff5da511fd578c17ba7bd84fdb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719045509082,
+          "stop" : 1719045509455,
+          "duration" : 373
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "更新管理员信息 - 不同输入",
+        "uid" : "1db65e11dd471a37",
+        "parentUid" : "c8ddd6ff5da511fd578c17ba7bd84fdb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719049697446,
+          "stop" : 1719049697952,
+          "duration" : 506
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "合法的姓名和联系方式更新管理员信息",
+        "uid" : "8a611488fd978df4",
+        "parentUid" : "c8ddd6ff5da511fd578c17ba7bd84fdb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719055360908,
+          "stop" : 1719055361342,
+          "duration" : 434
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试更新管理员信息",
+        "uid" : "73b17e4e950a27c3",
+        "parentUid" : "c8ddd6ff5da511fd578c17ba7bd84fdb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719059171493,
+          "stop" : 1719059171820,
+          "duration" : 327
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c8ddd6ff5da511fd578c17ba7bd84fdb"
+    } ],
+    "uid" : "e09a741f434941fd02d2566816b17cc4"
+  }, {
+    "name" : "测试删除医生账号",
+    "uid" : "874f33ada87df282",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1719043747127,
+      "stop" : 1719043748096,
+      "duration" : 969
+    },
+    "flaky" : true,
+    "parameters" : [ ]
+  } ]
+}

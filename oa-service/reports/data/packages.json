@@ -1,0 +1,333 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "edu.tongji.backend",
+    "children" : [ {
+      "name" : "service.impl",
+      "children" : [ {
+        "name" : "AccountServiceImplTest",
+        "children" : [ {
+          "name" : "deleteAccountSuccess",
+          "uid" : "ab34841a65797452",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040884845,
+            "stop" : 1719040885332,
+            "duration" : 487
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testAddAccountSuccess",
+          "uid" : "19453d73a6397fce",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885376,
+            "stop" : 1719040885383,
+            "duration" : 7
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testGetAccountList",
+          "uid" : "4f3c6291f1253881",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885387,
+            "stop" : 1719040885390,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testDeleteAccountWithNonExistentId",
+          "uid" : "e86ca01d93508c7c",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885395,
+            "stop" : 1719040885401,
+            "duration" : 6
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testAddAccountWithInvalidInputs",
+          "uid" : "a0b33e47995ffa4b",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885421,
+            "stop" : 1719040885440,
+            "duration" : 19
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testAddAccountWithInvalidInputs",
+          "uid" : "5fc43fb3fa825212",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885446,
+            "stop" : 1719040885449,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testAddAccountWithInvalidInputs",
+          "uid" : "a398b2cfcb56c1e9",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885453,
+            "stop" : 1719040885455,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testDeleteAccountWithIllegalId",
+          "uid" : "fb22b8a7ad9f2eba",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885461,
+            "stop" : 1719040885464,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testRepeatedIdCard",
+          "uid" : "ff61dbf95b5bd57b",
+          "parentUid" : "8b2dd12c2e563be125b7e47465f690aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719040885468,
+            "stop" : 1719040885470,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8b2dd12c2e563be125b7e47465f690aa"
+      }, {
+        "name" : "HospitalServiceImplTest",
+        "children" : [ {
+          "name" : "deleteHospital",
+          "uid" : "5049292f903f866",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719041222435,
+            "stop" : 1719041222440,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testDeleteHospitalIllegal",
+          "uid" : "5e8599a74b33a106",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719042801447,
+            "stop" : 1719042801482,
+            "duration" : 35
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testDeleteHospitalNotFound",
+          "uid" : "ad374af8f95056a6",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719042801512,
+            "stop" : 1719042801516,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deleteHospitalSuccess",
+          "uid" : "68c5cdc22a0a9ac9",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719042801520,
+            "stop" : 1719042801525,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addHospital_IdMinMinus",
+          "uid" : "d7e80e7d64979bbc",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "failed",
+          "time" : {
+            "start" : 1719042801527,
+            "stop" : 1719042801533,
+            "duration" : 6
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "addHospital_IdMax",
+          "uid" : "80ed391e13664e64",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719042801542,
+            "stop" : 1719042801547,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addHospital_IdMin",
+          "uid" : "6f224378da4c1489",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719042801549,
+            "stop" : 1719042801554,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addHospital_IdMaxPlus",
+          "uid" : "6374414c4e62d8b3",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "failed",
+          "time" : {
+            "start" : 1719042801557,
+            "stop" : 1719042801562,
+            "duration" : 5
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "addHospital_IdMinPlus",
+          "uid" : "4f085111bc5f1802",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719042801566,
+            "stop" : 1719042801570,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addHospital_IdMaxMinus",
+          "uid" : "e7bb680bf1f27ca3",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719042801574,
+            "stop" : 1719042801577,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "addHospital_DatabaseConnectionFailure",
+          "uid" : "3a399a12982df48b",
+          "parentUid" : "3f466a503a0a26b2bd8118a2c74f584e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719042801580,
+            "stop" : 1719042801585,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "3f466a503a0a26b2bd8118a2c74f584e"
+      } ],
+      "uid" : "service.impl"
+    }, {
+      "name" : "controller",
+      "children" : [ {
+        "name" : "AccountControllerTest",
+        "children" : [ {
+          "name" : "testDeleteAccount",
+          "uid" : "874f33ada87df282",
+          "parentUid" : "d74eaa57b839772df8bc35e1f874717b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1719043747127,
+            "stop" : 1719043748096,
+            "duration" : 969
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d74eaa57b839772df8bc35e1f874717b"
+      }, {
+        "name" : "AdminControllerTest",
+        "children" : [ {
+          "name" : "updateAdminInfo_validNameAndContact_success",
+          "uid" : "44987e254bff1e44",
+          "parentUid" : "e4acf6fb27bf99511936c31d103d81c6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1719045509082,
+            "stop" : 1719045509455,
+            "duration" : 373
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "updateAdminInfo",
+          "uid" : "1db65e11dd471a37",
+          "parentUid" : "e4acf6fb27bf99511936c31d103d81c6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1719049697446,
+            "stop" : 1719049697952,
+            "duration" : 506
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "updateAdminInfo_validInputs_success",
+          "uid" : "8a611488fd978df4",
+          "parentUid" : "e4acf6fb27bf99511936c31d103d81c6",
+          "status" : "failed",
+          "time" : {
+            "start" : 1719055360908,
+            "stop" : 1719055361342,
+            "duration" : 434
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "updateAdminInfoTestSuits",
+          "uid" : "73b17e4e950a27c3",
+          "parentUid" : "e4acf6fb27bf99511936c31d103d81c6",
+          "status" : "failed",
+          "time" : {
+            "start" : 1719059171493,
+            "stop" : 1719059171820,
+            "duration" : 327
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e4acf6fb27bf99511936c31d103d81c6"
+      } ],
+      "uid" : "6b3ed1da6c4485fd7baaf2753abe0397"
+    } ],
+    "uid" : "edu.tongji.backend"
+  } ]
+}

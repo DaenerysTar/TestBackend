@@ -1,0 +1,60 @@
+{
+  "uid" : "29654994320363b2",
+  "name" : "[1] null, 18139000985, Test Address, false",
+  "fullName" : "edu.tongji.backend.service.impl.AccountServiceImplTest.testAddAccountWithInvalidInputs",
+  "historyId" : "4ca5c7aa5e347f4c86e1b78eb7b1faa1",
+  "time" : {
+    "start" : 1719040751735,
+    "stop" : 1719040751760,
+    "duration" : 25
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "糖小智"
+  }, {
+    "name" : "feature",
+    "value" : "Service"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-E123ER6H"
+  }, {
+    "name" : "thread",
+    "value" : "19972@LAPTOP-E123ER6H.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "edu.tongji.backend.service.impl.AccountServiceImplTest"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.tongji.backend.service.impl.AccountServiceImplTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testAddAccountWithInvalidInputs"
+  }, {
+    "name" : "suite",
+    "value" : "edu.tongji.backend.service.impl.AccountServiceImplTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29654994320363b2.json",
+  "parameterValues" : [ ]
+}

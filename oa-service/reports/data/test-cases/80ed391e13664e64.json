@@ -1,0 +1,73 @@
+{
+  "uid" : "80ed391e13664e64",
+  "name" : "addHospital_IdMax()",
+  "fullName" : "edu.tongji.backend.service.impl.HospitalServiceImplTest.addHospital_IdMax",
+  "historyId" : "7709df67b00194de935c18153b758864",
+  "time" : {
+    "start" : 1719042801542,
+    "stop" : 1719042801547,
+    "duration" : 5
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "糖小智"
+  }, {
+    "name" : "feature",
+    "value" : "HospitalService"
+  }, {
+    "name" : "feature",
+    "value" : "addHospital_IdMax"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-E123ER6H"
+  }, {
+    "name" : "thread",
+    "value" : "10376@LAPTOP-E123ER6H.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "addHospital_IdMax"
+  }, {
+    "name" : "suite",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9c9fad74695ddf3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719041222386,
+        "stop" : 1719041222395,
+        "duration" : 9
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "80ed391e13664e64.json",
+  "parameterValues" : [ ]
+}

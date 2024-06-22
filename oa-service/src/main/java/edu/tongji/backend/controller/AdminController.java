@@ -44,7 +44,7 @@ public class AdminController {
         return new ResponseEntity<>(Response.success(admin, "The information of the adminstrator has been returnded"), HttpStatus.OK);
     }
     @PutMapping("/editAdminInfo")
-    ResponseEntity<Response<Boolean>> updateAdminInfo(@RequestParam String name, @RequestParam String contact) {
+    public ResponseEntity<Response<Boolean>> updateAdminInfo(@RequestParam String name, @RequestParam String contact) {
         //The phone number must be 11 digits and it's the valid phone number in China mainland.
         if (!contact.matches("^[1][3,4,5,7,8][0-9]{9}$")) {
             return new ResponseEntity<>(Response.fail("After 2024/1/7,register rules are updated!"
@@ -59,9 +59,9 @@ public class AdminController {
         }
         try {
             AdminDTO admin = new AdminDTO(null, name, contact);
-            admin.setAdminId(UserHolder.getUser().getUserId());
-            Boolean result = userClient2.updateAdminInfo(admin);
             UserDTO user = UserHolder.getUser();
+            admin.setAdminId(user.getUserId());
+            Boolean result = userClient2.updateAdminInfo(admin);
             user.setName(admin.getName());
             UserHolder.removeUser();
             UserHolder.saveUser(user);

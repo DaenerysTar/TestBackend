@@ -1,0 +1,105 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Expected java.lang.RuntimeException to be thrown, but nothing was thrown.",
+      "children" : [ {
+        "name" : "addHospital_IdMinMinus()",
+        "uid" : "d7e80e7d64979bbc",
+        "parentUid" : "1dd22da1e1dbad2944a3c9083d0f7041",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719042801527,
+          "stop" : 1719042801533,
+          "duration" : 6
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "addHospital_IdMaxPlus()",
+        "uid" : "6374414c4e62d8b3",
+        "parentUid" : "1dd22da1e1dbad2944a3c9083d0f7041",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719042801557,
+          "stop" : 1719042801562,
+          "duration" : 5
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1dd22da1e1dbad2944a3c9083d0f7041"
+    }, {
+      "name" : "expected: <200> but was: <<408 REQUEST_TIMEOUT Request Timeout,Response(isSuccess=false, response=null, message=The user-service connection has failedCannot invoke \"edu.tongji.backend.dto.UserDTO.getUserId()\" because \"user\" is null),[]>>",
+      "children" : [ {
+        "name" : "合法的姓名和联系方式更新管理员信息",
+        "uid" : "8a611488fd978df4",
+        "parentUid" : "4886e7e46e2cc6937a609aad70169fad",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719055360908,
+          "stop" : 1719055361342,
+          "duration" : 434
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4886e7e46e2cc6937a609aad70169fad"
+    }, {
+      "name" : "Status expected:<200> but was:<405>",
+      "children" : [ {
+        "name" : "测试更新管理员信息",
+        "uid" : "73b17e4e950a27c3",
+        "parentUid" : "f415092dfb28adc146572e301d8bf73b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719059171493,
+          "stop" : 1719059171820,
+          "duration" : 327
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f415092dfb28adc146572e301d8bf73b"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "\nUnnecessary stubbings detected.\nClean & maintainable test code requires zero unnecessary code.\nFollowing stubbings are unnecessary (click to navigate to relevant line of code):\n  1. -> at edu.tongji.backend.controller.AdminControllerTest.updateAdminInfo_validNameAndContact_success(AdminControllerTest.java:54)\nPlease remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.",
+      "children" : [ {
+        "name" : "updateAdminInfo_validNameAndContact_success()",
+        "uid" : "44987e254bff1e44",
+        "parentUid" : "6f415badd64f70e7bbba680961692708",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719045509082,
+          "stop" : 1719045509455,
+          "duration" : 373
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6f415badd64f70e7bbba680961692708"
+    }, {
+      "name" : "\nwhen() requires an argument which has to be 'a method call on a mock'.\nFor example:\n    when(mock.getArticles()).thenReturn(articles);\n\nAlso, this error might show up because:\n1. you stub either of: final/private/equals()/hashCode() methods.\n   Those methods *cannot* be stubbed/verified.\n   Mocking methods declared on non-public parent classes is not supported.\n2. inside when() you don't call method on mock but on some other object.\n",
+      "children" : [ {
+        "name" : "更新管理员信息 - 不同输入",
+        "uid" : "1db65e11dd471a37",
+        "parentUid" : "bde287f619645e898caf6e1260d86642",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719049697446,
+          "stop" : 1719049697952,
+          "duration" : 506
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bde287f619645e898caf6e1260d86642"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

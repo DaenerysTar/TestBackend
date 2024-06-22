@@ -1,0 +1,62 @@
+{
+  "uid" : "5049292f903f866",
+  "name" : "deleteHospital()",
+  "fullName" : "edu.tongji.backend.service.impl.HospitalServiceImplTest.deleteHospital",
+  "historyId" : "31669cf00f3d662a1b8cf5a8befc6d57",
+  "time" : {
+    "start" : 1719041222435,
+    "stop" : 1719041222440,
+    "duration" : 5
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "糖小智"
+  }, {
+    "name" : "feature",
+    "value" : "HospitalService"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-E123ER6H"
+  }, {
+    "name" : "thread",
+    "value" : "14444@LAPTOP-E123ER6H.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deleteHospital"
+  }, {
+    "name" : "suite",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5049292f903f866.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,63 @@
+{
+  "uid" : "3a46cf97150389c4",
+  "name" : "testDeleteHospitalNotFound()",
+  "fullName" : "edu.tongji.backend.service.impl.HospitalServiceImplTest.testDeleteHospitalNotFound",
+  "historyId" : "19e040f1944e27c0b3e3707f228d1384",
+  "time" : {
+    "start" : 1719042741938,
+    "stop" : 1719042741978,
+    "duration" : 40
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "糖小智"
+  }, {
+    "name" : "feature",
+    "value" : "HospitalService"
+  }, {
+    "name" : "feature",
+    "value" : "testDeleteHospitalNotFound"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-E123ER6H"
+  }, {
+    "name" : "thread",
+    "value" : "25280@LAPTOP-E123ER6H.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testDeleteHospitalNotFound"
+  }, {
+    "name" : "suite",
+    "value" : "edu.tongji.backend.service.impl.HospitalServiceImplTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3a46cf97150389c4.json",
+  "parameterValues" : [ ]
+}

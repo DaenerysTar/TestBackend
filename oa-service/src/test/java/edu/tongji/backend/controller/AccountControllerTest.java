@@ -60,7 +60,7 @@ class AccountControllerTest {
 
     @Feature("generateInvitationCode")
     @Test
-    @DisplayName("测试生成邀请码")
+    @DisplayName("测试生成邀请码，共包含3个测试用例")
     void GenerateInvitationCodeTestSuites() throws Exception {
         GenerateInvitationCodeTest(null);   // 测试非法输入
         GenerateInvitationCodeTest(2);      // 测试合法输入但该医院已有管理员
@@ -86,7 +86,7 @@ class AccountControllerTest {
 
     @Feature("deleteAccount")
     @Test
-    @DisplayName("测试删除医生账号")
+    @DisplayName("测试删除医生账号，共包含三个测试用例")
     void testDeleteAccount() {
         // 测试非法输入
         Integer doctorId = -1;

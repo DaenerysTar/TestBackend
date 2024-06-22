@@ -1,0 +1,101 @@
+{
+  "uid" : "874f33ada87df282",
+  "name" : "测试删除医生账号",
+  "fullName" : "edu.tongji.backend.controller.AccountControllerTest.testDeleteAccount",
+  "historyId" : "2ecb57834d1da5dafcb6e728cdf4f9e4",
+  "time" : {
+    "start" : 1719043747127,
+    "stop" : 1719043748096,
+    "duration" : 969
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-E123ER6H"
+  }, {
+    "name" : "thread",
+    "value" : "27028@LAPTOP-E123ER6H.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "edu.tongji.backend.controller.AccountControllerTest"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.tongji.backend.controller.AccountControllerTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testDeleteAccount"
+  }, {
+    "name" : "suite",
+    "value" : "edu.tongji.backend.controller.AccountControllerTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d665fd97e46142db",
+      "status" : "failed",
+      "statusDetails" : "expected: <The doctor account 13 has been removed> but was: <[500] during [POST] to [http://user-service/api/register/rmUser?userId=13] [UserClient2#rmUser(Integer)]: [{\"timestamp\":\"2024-06-22T08:04:16.886+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"\\r\\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot d... (1437 bytes)]>",
+      "time" : {
+        "start" : 1719043455904,
+        "stop" : 1719043456902,
+        "duration" : 998
+      }
+    }, {
+      "uid" : "765616811345ed43",
+      "status" : "failed",
+      "statusDetails" : "expected: <The doctor account 13 has been removed> but was: <[500] during [POST] to [http://user-service/api/register/rmUser?userId=13] [UserClient2#rmUser(Integer)]: [{\"timestamp\":\"2024-06-22T08:03:16.157+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"\\r\\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot d... (1437 bytes)]>",
+      "time" : {
+        "start" : 1719043395198,
+        "stop" : 1719043396174,
+        "duration" : 976
+      }
+    }, {
+      "uid" : "1dc92e68a88a4435",
+      "status" : "failed",
+      "statusDetails" : "expected: <The doctor account 1 has been removed> but was: <[500] during [POST] to [http://user-service/api/register/rmUser?userId=1] [UserClient2#rmUser(Integer)]: [{\"timestamp\":\"2024-06-22T08:00:46.073+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"\\r\\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot d... (1437 bytes)]>",
+      "time" : {
+        "start" : 1719043245154,
+        "stop" : 1719043246098,
+        "duration" : 944
+      }
+    }, {
+      "uid" : "88f90627c25ca497",
+      "status" : "failed",
+      "statusDetails" : "expected: <The doctor account-1 has been removed> but was: <The doctor account -1 has been removed>",
+      "time" : {
+        "start" : 1719043212352,
+        "stop" : 1719043213338,
+        "duration" : 986
+      }
+    }, {
+      "uid" : "d79f6706ba7cebb9",
+      "status" : "failed",
+      "statusDetails" : "expected: <The doctor -1 doesn't exist or has been removed earlier!> but was: <The doctor account -1 has been removed>",
+      "time" : {
+        "start" : 1719042987213,
+        "stop" : 1719042988444,
+        "duration" : 1231
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "874f33ada87df282.json",
+  "parameterValues" : [ ]
+}

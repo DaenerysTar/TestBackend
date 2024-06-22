@@ -6,6 +6,9 @@ import edu.tongji.backend.entity.Doctor;
 import edu.tongji.backend.entity.User;
 import edu.tongji.backend.mapper.DoctorMapper;
 import edu.tongji.backend.mapper.HospitalMapper;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -27,6 +30,8 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.ArgumentsProvider;
 import java.util.stream.Stream;
 
+@Epic("糖小智")
+@Feature("AccountService")
 @ExtendWith(MockitoExtension.class)
 class AccountServiceImplTest {
     @Mock
@@ -51,6 +56,7 @@ class AccountServiceImplTest {
         System.out.println("测试结束！");
     }
 
+    @Story("getAccountList")
     @Test
     @DisplayName("对GetAccountList方法进行简单的测试")
     void testGetAccountList() {
@@ -63,6 +69,7 @@ class AccountServiceImplTest {
         verify(doctorMapper, times(1)).getAccountList();
     }
 
+    @Story("addAccountSuccess")
     @Test
     @DisplayName("测试addAccount方法的正常情况")
     void testAddAccountSuccess() throws NoSuchAlgorithmException {
@@ -87,6 +94,7 @@ class AccountServiceImplTest {
     }
 
     // 使用参数化方法，测试addAccount方法对不合法输入的响应
+    @Story("addAccountWithInvalidInputs")
     @ParameterizedTest
     @MethodSource("provideInvalidData")
     @DisplayName("测试addAccount方法对不合法输入（异常输入）的响应")
@@ -97,6 +105,7 @@ class AccountServiceImplTest {
         verify(doctorMapper, times(0)).insert(doctor);
     }
 
+    @Story("deleteAccountSuccess")
     @Test
     @DisplayName("测试deleteAccount方法的正常情况")
     void deleteAccountSuccess() {
@@ -109,6 +118,7 @@ class AccountServiceImplTest {
         verify(userClient2, times(1)).rmUser(doctorId);
     }
 
+    @Story("testDeleteAccountWithIllegalId")
     @Test
     @DisplayName("测试deleteAccount方法的异常情况：非法ID")
     void testDeleteAccountWithIllegalId() {
@@ -133,6 +143,7 @@ class AccountServiceImplTest {
         verify(userClient2, times(0)).rmUser(doctorId);
     }
 
+    @Story("testRepeatedIdCard")
     @Test
     @DisplayName("对RepeatedIdCard进行简单的测试")
     public void testRepeatedIdCard() {

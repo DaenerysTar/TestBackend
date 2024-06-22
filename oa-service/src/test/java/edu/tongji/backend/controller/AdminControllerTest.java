@@ -3,6 +3,8 @@ package edu.tongji.backend.controller;
 import edu.tongji.backend.clients.UserClient2;
 import edu.tongji.backend.dto.AdminDTO;
 import edu.tongji.backend.util.Response;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -23,6 +25,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+@Epic("糖小智")
+@Feature("AdminController")
 @ExtendWith(MockitoExtension.class)
 class AdminControllerTest {
 
@@ -39,5 +43,5 @@ class AdminControllerTest {
         System.out.println("测试结束");
     }
 
-
+    
 }
